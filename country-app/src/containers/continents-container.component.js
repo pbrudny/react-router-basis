@@ -4,10 +4,6 @@ import CountryFlagList from "../presentational/flag-list.component";
 import {deleteCountry, setContinent} from "../actions/actions-countries";
 
 class ContinentsContainer extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     chooseContinent(event) {
         this.props.dispatch(setContinent(event.target.value));
     }
